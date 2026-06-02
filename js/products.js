@@ -1,5 +1,5 @@
 const productCards = document.querySelectorAll(
-  ".product-card, .featured-card, .featured-card-2",
+  ".product-card, .featured-card, .featured-card-2, .featured-card-3",
 );
 
 productCards.forEach((card) => {

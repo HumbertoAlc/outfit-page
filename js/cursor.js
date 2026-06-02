@@ -10,7 +10,7 @@ window.addEventListener("mousemove", (e) => {
 });
 
 const cursorCards = document.querySelectorAll(
-  ".product-card, .featured-card, .featured-card-2",
+  ".product-card, .featured-card, .featured-card-2, .featured-card-3",
 );
 cursorCards.forEach((card) => {
   card.addEventListener("mouseenter", () => {

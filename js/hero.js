@@ -3,6 +3,7 @@ gsap.set(".hero-line", { scaleX: 0 });
 gsap.set(".product-card", { y: 150, opacity: 0 });
 gsap.set(".featured-card", { clipPath: "inset(0 100% 0 0)", opacity: 1 });
 gsap.set(".featured-card-2", { clipPath: "inset(0 100% 0 0)", opacity: 1 });
+gsap.set(".featured-card-3", { clipPath: "inset(0 100% 0 0)", opacity: 1 });
 
 function animateHero() {
   gsap.to(".hero-char", {
@@ -47,6 +48,16 @@ function animateHero() {
     duration: 1.2,
     ease: "power4.inOut",
     delay: 0.9,
+    stagger: {
+      each: 0.15,
+      from: "left",
+    },
+  });
+  gsap.to(".featured-card-3", {
+    clipPath: "inset(0 0% 0 0)",
+    duration: 1.2,
+    ease: "power4.inOut",
+    delay: 1.1,
     stagger: {
       each: 0.15,
       from: "left",
