@@ -535,3 +535,63 @@ body {
 }
 
 
+.bag-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.bag-title {
+  display: flex;
+  gap: 10px;
+  letter-spacing: -4px;
+  color: white;
+}
+
+.bag-char-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.bag-char {
+  display: inline-block;
+  font-size: 15vw;
+  font-weight: 700;
+  color: white;
+}
+
+/*bagpage*/
+.bag-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  z-index: 999;
+  display: none;
+}
+
+.bag-hero {
+  padding: 140px 5vw 40px 5vw;
+}
+
+.bag-hero-title {
+  font-size: 16vw;
+  line-height: 0.85;
+  font-weight: 700;
+  letter-spacing: -8px;
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
