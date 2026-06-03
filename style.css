@@ -238,6 +238,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 0 5vw;
+  color:var(--accent);
 }
 
 .product-card {
@@ -250,6 +251,7 @@ body {
   width: 100%;
   aspect-ratio: 255 / 340;
   overflow: hidden;
+  
 }
 .img-main,
 .img-hover {
@@ -268,6 +270,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% center;
 }
 
 .product-info {
@@ -278,19 +281,19 @@ body {
 }
 
 .product-name {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .product-collection {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   opacity: 0.5;
   margin-top: 4px;
 }
 
 .product-price {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 
@@ -300,6 +303,7 @@ body {
   justify-content: space-between;
   padding: 40px 5vw;
   gap: 20px;
+  color:var(--accent);
 }
 
 .featured-left {
@@ -354,6 +358,7 @@ body {
   align-items: flex-start;
   padding: 40px 5vw;
   gap: 20px;
+  color:var(--accent);
   justify-content: flex-start;
 }
 
@@ -387,6 +392,7 @@ body {
   align-items: flex-start;
   padding: 40px 5vw;
   gap: 20px;
+  color:var(--accent);
   justify-content: space-between;
 }
 
@@ -418,47 +424,91 @@ body {
 
 /*statement*/
 .statement {
+  padding: 0 5vw 80px 5vw;
+}
+
+.statement-line {
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 40px;
+}
+
+.statement-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 80px 5vw;
 }
 
 .statement-left {
   display: flex;
   flex-direction: column;
-  gap: 0;
-}
-
-.statement-line {
-  width: 100%;
-  height: 2px;
-  background: var(--accent);
-  margin-bottom: 16px;
 }
 
 .statement-text {
   font-size: 68px;
   line-height: 1;
   font-weight: 700;
+  color: var(--accent);
   letter-spacing: -3px;
 }
 
 .statement-year {
   font-size: 146px;
+  color: var(--accent);
   line-height: 1;
   font-weight: 700;
   letter-spacing: -5px;
 }
 
+/*Footer*/
 .footer {
-	padding: 200px 5vw;
+  padding: 60px 5vw;
+}
+.footer-text,
+.footer-col p {
+  color: var(--accent);
 }
 
-.footer h2 {
-	font-size: 8vw;
-	line-height: 0.9;
-	font-weight: 500;
+.footer-text {
+  width: 75%;
+  color:var(--accent);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+.footer-line {
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 40px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  gap: 60px;
+  width: 50%;
+}
+
+.footer-right {
+  display: flex;
+  gap: 60px;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
 }
 
 .menu {
@@ -483,3 +533,5 @@ body {
 .menu-links a {
 	font-size: 5vw;
 }
+
+
